@@ -1,0 +1,43 @@
+#NoEnv
+SetWorkingDir %A_ScriptDir%
+CoordMode, Mouse, Window
+SendMode Input
+#SingleInstance Force
+SetTitleMatchMode 2
+#WinActivateForce
+SetControlDelay 1
+SetWinDelay 0
+SetKeyDelay -1
+SetMouseDelay 1
+SetBatchLines -1
+
+
+Special_Fights:
+Sleep, 5000
+Click, 377, 220 Left, 1  ; SPECIAL FIGHTS - FIGHT TAB
+Sleep, 800
+Click, 754, 221 Left, 1  ; Special
+Sleep, 800
+Click, 739, 450 Left, 1  ; Auto
+Sleep, 800
+Loop
+{
+    Click, 857, 400 Left, 1  ; GODS
+    Sleep, 7
+    Click, 433, 487 Left, 1  ; Double Punch
+    Sleep, 650
+    Click, 597, 483 Left, 1  ; Kick
+    Sleep, 650
+    Click, 585, 361 Left, 1  ; Finish
+    Sleep, 7
+}
+Click, 379, 264 Left, 1  ; Flee
+Sleep, 800
+Click, 739, 450 Left, 1  ; SPECIAL FIGHTS - Auto
+Sleep, 800
+Return
+
+
+Backspace::ExitApp
+
++p::Pause
